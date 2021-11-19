@@ -12,6 +12,9 @@ int hieu(int a, int b){
 	return a - b;
 }
 
+float tich(int a, int b){
+	return a * b;
+}
 int main()
 {
 	int a, b;
@@ -28,7 +31,7 @@ int main()
 	cin >> phepToan;
 	int total = tong(a,b);
 	int minuts = hieu(a,b);
-
+	float mul = tich(a,b);
 	
 	switch(phepToan){
 		case "+":
@@ -37,7 +40,9 @@ int main()
 		case "-":
 			cout<<"Minuts = "<<minuts<<endl;
 			break;
-		
+		case "-":
+			cout<<"Mul = "<<mul<<endl;
+			break;
 	}
 	
 	system("pause");
