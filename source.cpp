@@ -5,6 +5,15 @@ int hieu(int a, int b);
 
 float tich(int a, int b);
 
+bool checkChanLe (int a){
+	bool result = false;
+	if(a % 2 == 0){
+		result = true;
+	}
+	
+	return result;
+}
+
 int tong(int a, int b){
 	return a + b;
 }
